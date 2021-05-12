@@ -1,0 +1,13 @@
+package com.springboot.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class EmployeeSpringBootController {
+@GetMapping(value="/")
+/*@RequestMapping(value="/" method=RequestMethod.GET)*/
+public String hello() {
+	return "Hello Spring Boot Initilizer project";
+}
+}
